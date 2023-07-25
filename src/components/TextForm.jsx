@@ -49,7 +49,7 @@ const [text, setText] = useState('');
     <div className="container mt-3" style={{color: props.mode === 'light' ? 'dark' : 'light'}}>
         <h3>{props.heading}</h3>
         <div className="mb-3">
-        <textarea style={{backgroundColor: props.mode === 'dark' ? '#212529' : 'white', color: props.mode === 'dark' ? 'white' : 'black'}} className="form-control" value={text} onChange={handleOnChange} id="textarea" rows="8"></textarea>
+        <textarea style={{backgroundColor: props.mode === !'light' ? '#212529' : 'white', color: props.mode === 'dark' ? 'white' : 'black'}} className="form-control" value={text} onChange={handleOnChange} id="textarea" rows="8"></textarea>
         <button disabled={text.length===0} className="btn btn-primary mt-3" onClick={upperCaseClick}>UPPERCASE</button>
         <button disabled={text.length===0} className="btn btn-primary mt-3 ms-2" onClick={lowerCaseClick}>LOWECASE</button>
         <button disabled={text.length===0} className="btn btn-primary mt-3 ms-2" onClick={clearTextClick}>CLEAR TEXT</button>
